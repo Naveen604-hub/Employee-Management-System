@@ -1,0 +1,765 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    background:#f4f7fb;
+
+    color:#333;
+
+    line-height:1.6;
+
+}
+
+
+
+header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:18px 8%;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+
+}
+
+
+.logo-section{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+.logo{
+
+    width:60px;
+
+    height:60px;
+
+    object-fit:contain;
+
+}
+
+
+.logo-section h1{
+
+    font-size:28px;
+
+    font-weight:600;
+
+}
+
+
+.logo-section p{
+
+    font-size:14px;
+
+    opacity:.9;
+
+}
+
+
+#themeBtn{
+
+    border:none;
+
+    padding:12px 20px;
+
+    border-radius:8px;
+
+    background:white;
+
+    color:#2563eb;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+
+#themeBtn:hover{
+
+    background:#dbeafe;
+
+}
+
+
+.hero{
+
+    width:90%;
+
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+
+    align-items:center;
+
+}
+
+
+.hero-text h2{
+
+    font-size:38px;
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+
+.hero-text p{
+
+    font-size:18px;
+
+    color:#555;
+
+}
+
+
+.hero img{
+
+    width:100%;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+
+
+.dashboard{
+
+    width:90%;
+
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+.card{
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.card i{
+
+    font-size:42px;
+
+    color:#2563eb;
+
+}
+
+
+
+.card h2{
+
+    font-size:34px;
+
+    color:#2563eb;
+
+}
+
+
+
+.form-section{
+
+    width:90%;
+
+    margin:40px auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+
+
+.form-section h2{
+
+    text-align:center;
+
+    color:#2563eb;
+
+    margin-bottom:30px;
+
+}
+
+
+
+#employeeForm{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+#employeeForm input,
+#employeeForm select{
+
+    padding:14px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+}
+
+
+
+#employeeForm input:focus,
+#employeeForm select:focus{
+
+    border-color:#2563eb;
+
+    outline:none;
+
+}
+
+
+
+#submitBtn{
+
+    grid-column:1/-1;
+
+    padding:15px;
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+
+
+#submitBtn:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+
+.search-section{
+
+    width:90%;
+
+    margin:30px auto;
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.search-section input,
+.search-section select{
+
+    padding:13px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+}
+
+
+
+.search-section input{
+
+    flex:2;
+
+}
+
+
+
+.search-section select{
+
+    flex:1;
+
+}
+
+
+
+#clearBtn{
+
+    background:#ef4444;
+
+    color:white;
+
+    border:none;
+
+    padding:13px 22px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+
+#clearBtn:hover{
+
+    background:#dc2626;
+
+}
+
+
+
+
+.table-section{
+
+    width:90%;
+
+    margin:40px auto;
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow-x:auto;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+
+
+thead{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+
+
+th,
+td{
+
+    padding:15px;
+
+    text-align:center;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+
+
+tbody tr:nth-child(even){
+
+    background:#f8f9fc;
+
+}
+
+
+
+tbody tr:hover{
+
+    background:#eef4ff;
+
+}
+
+
+
+.avatar,
+.employee-img,
+td img{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    vertical-align:middle;
+
+    margin-right:8px;
+
+}
+
+
+
+.edit-btn{
+
+    background:#10b981;
+
+    color:white;
+
+    border:none;
+
+    padding:8px 14px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+}
+
+
+.edit-btn:hover{
+
+    background:#059669;
+
+}
+
+
+
+.delete-btn{
+
+    background:#ef4444;
+
+    color:white;
+
+    border:none;
+
+    padding:8px 14px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+}
+
+
+
+.delete-btn:hover{
+
+    background:#dc2626;
+
+}
+
+
+button{
+
+    transition:.3s;
+
+}
+
+
+button:active{
+
+    transform:scale(.97);
+
+}
+
+
+
+footer{
+
+    background:#2563eb;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:50px;
+
+}
+
+
+body.dark{
+
+    background:#121212;
+
+    color:white;
+
+}
+
+
+
+body.dark .form-section,
+body.dark .card,
+body.dark .table-section{
+
+    background:#1e1e1e;
+
+}
+
+
+
+body.dark input,
+body.dark select{
+
+    background:#2b2b2b;
+
+    color:white;
+
+    border:1px solid #555;
+
+}
+
+
+
+body.dark tbody tr:nth-child(even){
+
+    background:#252525;
+
+}
+
+
+
+body.dark tbody tr:hover{
+
+    background:#333;
+
+}
+
+
+
+.card,
+.form-section,
+.table-section,
+.hero{
+
+    animation:fadeIn .6s ease;
+
+}
+
+
+
+@keyframes fadeIn{
+
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+
+}
+
+
+
+
+@media(max-width:992px){
+
+
+.hero{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+
+}
+
+
+
+
+@media(max-width:768px){
+
+
+header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+#employeeForm{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.search-section{
+
+    flex-direction:column;
+
+}
+
+
+table{
+
+    min-width:900px;
+
+}
+
+
+}
+
+
+
+
+@media(max-width:480px){
+
+
+.logo{
+
+    width:45px;
+
+    height:45px;
+
+}
+
+
+.logo-section h1{
+
+    font-size:22px;
+
+}
+
+
+.hero-text h2{
+
+    font-size:28px;
+
+}
+
+
+
+.card h2{
+
+    font-size:28px;
+
+}
+
+
+}
+
+
+
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+
+::-webkit-scrollbar-thumb{
+
+    background:#2563eb;
+
+    border-radius:10px;
+
+}
+
+
+::-webkit-scrollbar-track{
+
+    background:#f1f1f1;
+
+}
